@@ -1,0 +1,45 @@
+@import '../../sass/mixin';
+@import '../../sass/variables';
+
+.list {
+    height: 100vh;
+    margin-top: 10px;
+
+    &__total-count {
+        padding: 40px;
+        border-bottom: 1px solid #ddd;
+        background-color: #f9f9f9;
+        font-size: $fs-0;
+        font-weight: bold;
+        @include mobileBreakPoint {
+            padding: 20px;
+        }
+    }
+
+    &__results {
+        padding-left: 20px;
+    }
+
+    &__intro,
+    &__no-matching-results {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: $fs-0;
+    }
+
+    &__message,
+    &__result-message {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    &__octocat-image {
+        text-align: center;
+
+        & > img {
+            width: 20%;
+        }
+    }
+}
