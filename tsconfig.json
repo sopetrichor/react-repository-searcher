@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext", "es6", "es7"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "noImplicitAny": false,
+        "jsx": "preserve",
+        "downlevelIteration": true,
+        "baseUrl": "src",
+        "paths": {
+            "@actions/*": ["./actions/*"],
+            "@components/*": ["./components/*"],
+            "@hooks/*": ["./hooks/*"],
+            "@mock-data/*": ["./mock-data/*"],
+            "@models/*": ["./models/*"],
+            "@sass/*": ["./sass/*"],
+            "@services/*": ["./services/*"],
+            "@store/*": ["./store/*"],
+            "@src/*": ["./*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
