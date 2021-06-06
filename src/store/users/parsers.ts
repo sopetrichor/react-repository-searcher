@@ -1,6 +1,6 @@
-import { User } from './types';
+import { User, UserType } from './types';
 
-type UserIdDataType = [number, User];
+export type UserIdDataType = [number, User];
 
 export const createUserIdData = (items: { [key: string]: any }[]): UserIdDataType[] => {
     return items.map((item) => {
@@ -10,7 +10,7 @@ export const createUserIdData = (items: { [key: string]: any }[]): UserIdDataTyp
             id: id,
             avatarURL: avatar_url,
             htmlURL: html_url,
-            type: User[type],
+            type: UserType[type as string],
         });
 
         return [id, data];
