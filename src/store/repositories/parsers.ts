@@ -1,6 +1,6 @@
 import { Repository, RepositoryInterface } from './types';
 
-type RepoIdDataType = [number, Repository];
+export type RepoIdDataType = [number, Repository];
 
 const getLanguage = (lang: string): string => {
     return lang ? lang : null;
